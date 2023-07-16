@@ -1,0 +1,350 @@
+/* XX-Large devices (larger desktops, 1600px and up) */
+@media (max-width: 1600px) {
+    
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {
+    .heading {
+        font-size: 70px;
+        line-height: 64px; 
+    }
+    .hero-section .carousel-caption h1{
+        font-size: 70px;
+        line-height: 75px;
+    }
+    .footer-section {
+        padding: 160px 0px 70px;
+    }
+    .explor-section .slide-box .number{
+        font-size: 80px;
+        top: 41px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 60px;
+        line-height: 53px; 
+    }
+    .hero-section .carousel-caption h1{
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .hero-section .header-logo{
+        width: 300px;
+    }
+    .explor-section .owl-carousel .owl-item img{
+        width: 440px;
+    }
+    .explor-section .slide-box .number{
+        font-size: 70px;
+        top: 41px;
+    }
+    .explor-section .slide-ovelay .hover-text{
+        font-size: 36px;
+    }
+    .explor-section {
+        padding: 150px 0px 125px;
+    }
+    .explor-section .owl-theme .owl-nav{
+        top: -100px;
+    }
+
+    /* ---------- about section ------------ */
+    .about-section {
+        padding: 130px 0px 115px;
+    }
+    .about-gallery .long{
+        height: 440px;
+        margin-bottom: 5px;
+    }
+    .about-gallery .short{
+       height: 220px;
+        margin-bottom: 5px;
+    }
+    .about-gallery .g-2,
+    .gx-2 {
+    --bs-gutter-x: 0.313rem !important;
+    }
+    .about-gallery .see-more-btn{
+        width: 140px;
+        height: 140px;
+        font-size: 22px;
+    }
+    .about-gallery .box{
+        height: 230px; 
+    }
+   
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    .heading {
+        font-size: 50px;
+        line-height: 43px; 
+        letter-spacing: 0.10px;
+    }
+    .hero-section .header-logo{
+        width: 250px;
+    }
+    .hero-section .carousel-caption h1{
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .contact-part p {
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 0px;
+    }
+    .contact-part .fist-line {
+        letter-spacing: -0.9px;
+        margin-left: -10px;
+    }
+    .contact-part .second-line{
+        letter-spacing: 0.9px;
+        margin-left: 90px;
+    }
+    /* slider section */
+    .explor-section .owl-stage-outer .owl-item:nth-child(even) {
+        margin-top: 0px;
+    }
+    .explor-section .owl-carousel .owl-item img{
+        width:440px;
+       
+    }
+    .explor-section .slide-box .number{
+        font-size: 50px;
+        top: 40px;
+    }
+    .contact-part .contact-btn{
+        display: none;
+    }
+    /* about section */
+    .about-section .about-text{
+        margin-left: 0px;
+    }
+   
+    /* foooter */
+    .footer-section {
+        padding: 140px 0px 65px;
+    }
+    .footer-section .address{
+        padding-top: 45px;
+    }
+    .footer-section .line {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .footer-section .footer-btn{
+        align-items: center;
+        justify-content: center;
+    }
+    .btm-text li:not(:last-child) {
+        margin-right:30px;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .hero-section .carousel-inner{
+        text-align: start;
+    }
+    .hero-section .header-logo{
+        margin-top: 32px;
+        margin-left: 30px;
+        width: 200px;
+    }
+    
+    .hero-section .carousel-control-circle{
+        width: 48px;
+        height: 48px;
+    }
+    .carousel-control-prev, .carousel-control-next{
+        align-items: end;
+        bottom: 20px;
+    }
+    .hero-section .carousel-caption{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .hero-section .carousel-caption h1{
+        font-size: 40px;
+        line-height: 44px;
+        margin-top: 0px;
+    }
+    .heading .head-one{
+        padding-left: 54px;
+    }
+    .heading .head-two{
+        padding-left: 165px;
+    }
+    .up-tilte{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .about-section::after, .explor-section::after, .contact-part::after, .footer-section::after{
+        height: 100px;
+        top: -50px;
+    }
+    .explor-section::before{
+        height: 100px;
+        bottom: -50px;
+    }
+    /* ------------slider section -------------- */
+    .explor-section .owl-carousel .owl-item img{
+        width:330px;
+    }
+    .explor-section {
+        padding: 125px 0px 60px;
+    }
+    .explor-section .slide-box .number{
+        font-size: 36px;
+        top: 39px;
+    }
+    .slide-box h3{
+        font-size: 28px;
+        margin-top: 18px;
+        margin-bottom: 8px;
+    }
+    .explor-section .slide-ovelay .hover-text{
+        font-size: 28px;
+    }
+    .slide-box .more-btn{
+        opacity: 1;
+        font-size: 14px;
+    }
+    .explor-section .slide-box:hover .more-btn{
+        opacity: 1;
+        top: 0px;
+    }
+    .slide-box .sub-title{
+        display: none;
+      }
+
+    .explor-section .heading{
+        margin-bottom: 160px;
+    }
+    .explor-section .owl-theme .owl-nav{
+        left: 80px;
+        top: -90px;
+    }
+    /* -------------- about section --------- */
+    .about-text p:nth-child(2){
+        margin-top: 14px;
+    }
+    .about-section {
+        padding: 110px 0px 105px;
+    }
+    .about-section .about-text {
+        padding: 12px 0px 60px;
+    }
+    .about-text .btn {
+        margin-top: 24px;
+    }
+
+    .about-gallery .long{
+        height: 248px;
+        margin-bottom: 2px;
+    }
+    .about-gallery .short{
+       height: 144px;
+        margin-bottom: 2px;
+    }
+    .about-gallery .g-2,
+    .gx-2 {
+    --bs-gutter-x: 0.188rem !important;
+    }
+    .about-gallery .see-more-btn{
+        width: 80px;
+        height: 80px;
+        font-size: 14px;
+    }
+    .about-gallery .box{
+        height: 144px; 
+    }
+
+    
+    /* ------------contact section -------------- */
+    .contact-part {
+        padding: 60px 0px 112px; 
+    }
+    /* ------------footer section -------------- */
+    .footer-section {
+        padding: 107px 0px 57px;
+    }
+    .heading {
+        font-size: 40px;
+        line-height: 33px; 
+        letter-spacing: 0.08px;
+    }
+    .footer-section .address{
+        padding-top: 38px;
+        text-align: center;
+    }
+    .footer-section .footer-btn{
+      margin-top: 40px;
+      height: auto;
+    }
+    .btn-custom{
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.6px;
+        padding: 15px 28px;
+    }
+    .social-link{
+        margin-bottom: 43px;
+    }
+    .btm-text li:not(:last-child){
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
+    .btm-link{
+        margin-top: 56px;
+    }
+    .btm-footer{
+        font-size: 14px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    body{
+        font-size: 16px;
+    }
+    .hero-section .header-logo{
+        width: 162px;
+    }
+    .explor-section .owl-theme .owl-nav{
+        left: 60px;
+        top: -90px;
+    }
+    .about-gallery .long{
+        height: 169px;
+        margin-bottom: 2px;
+    }
+    .about-gallery .short{
+       height: 71px;
+        margin-bottom: 2px;
+    }
+    .about-gallery .g-2,
+    .gx-2 {
+    --bs-gutter-x: 0.188rem !important;
+    }
+    .about-gallery .see-more-btn{
+        width: 60px;
+        height: 60px;
+        font-size: 12px;
+    }
+    .about-gallery .box{
+        height: 71px; 
+    }
+}
+/* Small devices (landscape phones, 390px and up) */
+@media (max-width: 390px) {
+    
+}   
+}
