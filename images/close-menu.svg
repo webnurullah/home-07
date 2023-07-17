@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Group_106" data-name="Group 106" transform="translate(-314 -29)">
+    <g id="Oval" transform="translate(314 29)" fill="none" stroke="#c19a5b" stroke-miterlimit="10" stroke-width="1">
+      <circle cx="24" cy="24" r="24" stroke="none"/>
+      <circle cx="24" cy="24" r="23.5" fill="none"/>
+    </g>
+    <path id="Combined_Shape" data-name="Combined Shape" d="M3.161,8.632,20.132-8.339l.707.707L3.868,9.339Z" transform="translate(326 52.5)" fill="#c19a5b"/>
+    <path id="Combined_Shape-2" data-name="Combined Shape" d="M0,.707,16.971,17.678l.707-.707L.707,0Z" transform="translate(346.839 61.839) rotate(180)" fill="#c19a5b"/>
+  </g>
+</svg>

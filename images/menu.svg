@@ -1,0 +1,7 @@
+<svg id="menu" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="Oval" fill="none" stroke="#c19a5b" stroke-width="1">
+    <circle cx="32" cy="32" r="32" stroke="none"/>
+    <circle cx="32" cy="32" r="31.5" fill="none"/>
+  </g>
+  <path id="Combined_Shape" data-name="Combined Shape" d="M0,17V16H24v1ZM0,9V8H24V9ZM0,1V0H24V1Z" transform="translate(20 24)" fill="#c19a5b"/>
+</svg>
