@@ -1,4 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: fluro;
+    src: url(../fonts/FLURO-Regular.otf);
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: fluro-light;
+    src: url(../fonts/FLURO-Light.otf);
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: fluro-bold;
+    src: url(../fonts/FLURO-Bold.otf);
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: bold-outline;
+    src: url(../fonts/FLURO-Bold-Outline.otf);
+   
+  }
+  @font-face {
+    font-family: fluro-semibold;
+    src: url(../fonts/FLURO-Semibold.otf);
+    font-weight: 600;
+  }
+
+
 a{
     text-decoration: none;
     color: #C19A5B;
@@ -10,14 +38,43 @@ a:hover{
     font-size: 76px;
     line-height: 64px;
     font-family: 'Lora', serif;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: -2px;
-}
-body{
-    font-size: 18px;
+    
 }
 
+body{
+    font-size: 18px;
+    font-family: 'Lora', serif;
+}
+.html-inner{
+    height: 100vh;
+    overflow: hidden;
+}
+.body-inner{
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+  
+ .main-wrapper {
+    position: relative;
+    z-index: 2;
+  }
+
 /* menu part */
+.header-part{
+    top: 20px;
+    right: 30px;
+    position: fixed;
+    z-index: 99;
+}
 .fix-menu-icon{
     top: 20px;
     right: 30px;
@@ -53,6 +110,7 @@ body{
     font-size: 32px;
     line-height: 32px;
     text-transform: uppercase;
+    font-weight: 400;
 }
 .menu-box{
     margin-left: 15px;
@@ -66,7 +124,7 @@ body{
     text-transform: uppercase;
     font-family: fluro;
 }
-.menu-box li:first-child a{
+.menu-box li a.active{
     color: #c19a5b !important;
 }
 .offcanvas-body .line{
@@ -80,6 +138,7 @@ body{
     margin-top: 15px;
 }
 .up-tilte{
+    font-family: fluro-semibold;
     display: inline-block;
     color: #c19a5b;
     font-size: 18px;
@@ -87,6 +146,12 @@ body{
     line-height: 1.67;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+.hero-section .up-tilte,
+.banner-caption .up-tilte{
+    font-family: fluro;
+    font-size: 24px;
+    font-weight: 400;
 }
 .btn-custom{
     padding: 10.5px 30px;
@@ -98,11 +163,17 @@ body{
     color: #fff;
     text-transform: uppercase;
     line-height: 32px;
+    font-family: fluro-semibold;
+    font-weight: 600;
 }
 .btn-custom.btn:hover{
     color: #fff;
 }
-.about-section::after, .explor-section::after, .contact-part::after, .second-section::after, .footer-section::after
+.about-section::after, 
+.explor-section::after,
+.contact-part::after, 
+.second-section::after, 
+.footer-section::after
 {
     content: '';
     width: 1px;
@@ -127,13 +198,35 @@ body{
     bottom: -75px;
     margin: auto;
 }
-.hero-section{
-    background: url(../images/header-bg.jpg) no-repeat center;
+
+
+
+.hero-section {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+  }
+  
+ .hero-section::after {
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: block;
+    background-image: url(../images/header-bg.jpg);
     background-size: cover;
-    background-attachment: fixed;
-    -o-object-fit: cover;
-       object-fit: cover;
-}
+    -webkit-transform-origin: center center 0;
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+  }
+
 .hero-section:before {
     content: "";
     position: absolute;
@@ -143,18 +236,21 @@ body{
     opacity: 0.5;
     height: 100%;
     width: 100%;
-  }
+} 
 .hero-section h1{
     font-size: 76px;
     line-height: 80px;
     font-family: 'Lora', serif;
     text-transform: uppercase;
+    font-weight: 400;
 }
 .heading .head-one{
     padding-left: 100px;
+    letter-spacing: 0.15px;
 }
 .heading .head-two{
     padding-left: 300px;
+    letter-spacing: 0.15px;
 }
   /* ---- Carousel custom Code ---- */
 .hero-section .carousel-caption{
@@ -205,6 +301,8 @@ body{
     margin-left: 300px;
     max-width: 670px;
     padding: 22px 0px 90px;
+    font-family: fluro;
+    font-weight: 400;
 }
 .about-text p:nth-child(2){
     margin-top: 40px;
@@ -246,6 +344,8 @@ body{
    line-height: 1;
    text-transform: uppercase;
    color: #c19a5b;
+   font-weight: 400;
+    font-family: 'Lora', serif;
 }
 .about-gallery .box{
   display: flex;
@@ -262,15 +362,21 @@ body{
     z-index: 1;
     padding: 200px 0px;
 }
+.explor-section .slide-box {
+    margin-top: 50px;
+}
+.head-content{
+    margin-bottom: 100px;
+}
 .explor-section .slide-box .number{
     font-size: 96px;
     line-height: 80px;
     font-family: 'Lora', serif;
     display: block;
     text-align: end;
-    position: relative;
+    position: absolute;
     z-index: 2;
-    top: 42px;
+    top: 10px;
     right: 10px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: #e0c7a0;
@@ -312,6 +418,9 @@ body{
     transform: translate(-50%, -50%);
     font-size: 40px;
     opacity: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
 }
 .explor-section .slide-box:hover .hover-text{
     opacity: 1;
@@ -331,6 +440,7 @@ body{
     font-size: 32px;
     line-height: 32px;
     text-transform: uppercase;
+    font-weight: 400;
 }
 .slide-box .title-box{
     position: relative;
@@ -342,6 +452,8 @@ body{
   position: absolute;
   top: 0;
   transition: all .2s;
+  font-family: fluro;
+  font-weight: 400;
 }
 .explor-section .slide-box:hover .sub-title{
     opacity: 0;
@@ -355,6 +467,8 @@ body{
    left: 0;
    top: 0;
    transition: all .2s;
+   font-family: fluro;
+   font-weight: 400;
 }
 .explor-section .slide-box:hover .more-btn{
     opacity: 1;
@@ -366,11 +480,11 @@ body{
     position: absolute;
     top: -150px;
     right: 28%;
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
     border-radius: 24px;
     border: solid 1px #c19a5b;
-    background-color: #fff;
+    background-color: #F9F5EF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,10 +501,12 @@ body{
     transform: translateY(-50%);
     z-index: -1;
 }
+#multi-slider.owl-theme .owl-nav [class*=owl-]{
+    font-size: 20px !important;
+    margin: 2px !important;
+}
 .owl-theme .owl-nav [class*=owl-]{
     color: #c19a5b !important;
-    font-size: 17px !important;
-    margin: 3px !important;
 }
 .owl-theme .owl-nav [class*=owl-]:hover{
     background-color: transparent;
@@ -398,7 +514,7 @@ body{
 /* =================== Contact part =================== */
 .contact-part{
     background-color: #f9f5ef;
-    padding: 164px 0px;
+    padding: 165px 0px;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -432,6 +548,8 @@ body{
     margin-right: 142px;
     float: right;
     margin-top: -48px;
+    position: relative;
+    z-index: 2;
 }
 .contact-btn span{
     font-family: Lora;
@@ -445,7 +563,7 @@ body{
 .footer-section{
     color: #fff;
     background-color: #544c43;
-    padding: 194px 0px 82px;
+    padding: 200px 0px 90px;
     position: relative;
     z-index: 1;
 }
@@ -468,6 +586,12 @@ body{
 }
 .footer-section .address li{
     line-height: 32px;
+    font-family: fluro;
+    font-weight: 400;
+}
+.footer-section .address li:first-child{
+    font-family: fluro-semibold;
+    font-weight: 600;
 }
 .footer-section .social-link a{
     width: 48px;
@@ -491,6 +615,14 @@ body{
 .btm-link li a{
     color: #fff;
 }
+.btm-text li{
+    font-size: 16px;
+    font-family: fluro;
+}
+.btm-link li{
+    font-size: 16px;
+    font-family: fluro;
+}
 .btm-text li:not(:last-child){
     margin-right: 42px;
 }
@@ -501,16 +633,33 @@ body{
 
 
 /* ------------------- details page -------------------- */
-.header-banner{
-    height: 100vh;
-    width: 100%;
-    background: url(../images/hero-background.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    -o-object-fit: cover;
-       object-fit: cover;
+
+.header-banner {
+    box-sizing: border-box;
+    min-height: 100vh;
     position: relative;
+    transform-style: inherit;
+    width: 100vw;
 }
+
+.header-banner::before {
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: block;
+    background-image: url(../images/hero-background.jpg);
+    background-size: cover;
+    -webkit-transform-origin: center center 0;
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+  }
+  
 .header-banner::after{
     content: "";
     position: absolute;
@@ -541,8 +690,10 @@ body{
     font-size: 72px;
     line-height: 80px;
     margin: 0px;
+    font-weight: 400;
 }
 .second-section{
+    background-color: #fff;
     position: relative;
     padding: 165px 0px;
 }
@@ -616,4 +767,62 @@ body{
     justify-content: flex-end;
     margin-top: -120px;
     margin-right: -100px;
+}
+.logoSlide-section{
+    padding: 165px 0px;
+    position: relative;
+}
+.logoSlide-section .line{
+    height: 1px;
+    width: 100%;
+    background-color: #E8D9C3; 
+}
+#logo-slider{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    max-width: 1030px;
+    margin: auto;
+}
+.logoSlide-section .owl-theme .owl-nav{
+   margin-top: 0px;
+   position: absolute;
+   top: 45%;
+   transform: translateY(-45%);
+   width: 100%;
+}
+.logoSlide-section .owl-prev {
+    position: absolute;
+    left: -60px;
+}
+.logoSlide-section .owl-next {
+    position: absolute;
+    right: -60px;
+}
+.logoSlide-section .owl-carousel .owl-item img{
+    width: 170px;
+}
+#logo-slider.owl-theme .owl-nav [class*=owl-]{
+    font-size: 22px !important;
+    
+}   
+
+
+.mf-cursor.-text:before {
+    opacity: 1;
+    transform: scale(1.2);
+}
+.mf-cursor-text{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    top: 0;
+    left:0;
+}
+.mf-cursor::before{
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+}   
+.mf-cursor.-text:before{
+    background-color: #C19A5B;
 }

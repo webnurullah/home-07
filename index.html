@@ -17,6 +17,15 @@
   <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
 
+  <!-- litebox -->
+  <link rel="stylesheet" href="lightbox/lightboxed.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+  <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+ 
 
   <!-- Fontawesome icon -->
   <script src="https://kit.fontawesome.com/fcea059855.js" crossorigin="anonymous"></script>
@@ -24,15 +33,13 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- Responsive css -->
   <link rel="stylesheet" href="css/brackpoint.css">
-
+  
 
 </head>
 
 <body>
-  <div class="main-wrapper">
-    <!-- ========================= Hero Section ========================== -->
 
-   <div class="header-part">
+  <div class="header-part">
     <div class="fix-menu-icon">
       <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="">
         <img src="images/menu.svg" alt="">
@@ -45,208 +52,105 @@
       </div>
       <div class="offcanvas-body">
         <h6>House70</h6>
-       <div class="line"></div>
+        <div class="line"></div>
         <h6>Exhibitors</h6>
-        <ul class="list-unstyled menu-box" >
-          <li><a href="">Trias</a></li>
+        <ul class="list-unstyled menu-box">
+          <li><a class="active" href="">Trias</a></li>
           <li><a href="">Saxl – Bödenbeläge</a></li>
           <li><a href="">Tischlerei Goller</a></li>
           <li><a href="">waldboth – malermeister</a></li>
         </ul>
         <div class="line"></div>
-        <a class="btn btn-custom" href="">PARTNER WERDEN</a>
+        <a class="btn btn-custom" href="mailto:info@house70.it">PARTNER WERDEN</a>
       </div>
     </div>
-   </div>
+  </div>
 
-
-
-    <div class="hero-section">
-      <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <img class="header-logo" src="images/header-logo.svg" alt="logo">
-          <div class="carousel-item active">
-            <div class="carousel-caption">
-              <span class="up-tilte">Parallax Header</span>
-              <h1>Interior <br>
-                showroom</h1>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <span class="up-tilte">Parallax Header</span>
-              <h1>Interior <br>
-                showroom</h1>
-
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <span class="up-tilte">Parallax Header</span>
-              <h1>Interior <br>
-                showroom</h1>
-
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
-          <div class="carousel-control-circle">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </div>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
-          <div class="carousel-control-circle">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </div>
-        </button>
-      </div>
-    </div>
-
-    <!-- ========================= About Section ========================== -->
-    <div class="about-section">
-      <div class="container">
-          <span class="up-tilte">About HOUSE70</span>
-          <h2 class="heading">art & science <br><span class="head-one">of interior</span><br> <span
-              class="head-two">Design</span></h2>
-          <div class="about-text">
-            <p>Hinter HOUSE70 in der Julius Durst Straße 70 steckt weit mehr als nur die genaue Ortsbezeichnung.
-              Vielmehr wurde hier die Vision des Zusammenspiels hochqualifizierter Gewerke des Innenausbaus
-              verwirklicht.</p>
-            <p>Auf 2.500 Quadratmeter Ausstellungsfläche werden Kunden zu den Sektoren Küche, Inneneinrichtung, Parkett
-              und Bodenbeläge, Wandgestaltung, Lichtplanung und Beleuchtung, Maßmöbel, Matratzen, Einrichtung für den
-              Außenbereich sowie die Planung und Einrichtung von Büroräumen bedient.</p>
-            <div class="text-center text-lg-start">
-              <a class="btn btn-custom" href="">Partner werden</a>
-            </div>
-          </div>
-       
-        <div class="about-gallery ">
-          <div class="row gx-2">
-            <div class="col-4">
-              <img class="w-100 long" src="images/03.jpg" alt="">
-              <div class="box" >
-                <a class="see-more-btn" href="">
-                    <span>See <br> More</span>
-                </a>
+  <div class="html-inner">
+    <div class="body-inner">
+      <!-- ========================= Hero Section ========================== -->
+      <div class="hero-section">
+        <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <img class="header-logo" src="images/header-logo.svg" alt="logo">
+            <div class="carousel-item active">
+              <div class="carousel-caption">
+                <span class="up-tilte">Parallax Header</span>
+                <h1>Interior <br>
+                  showroom</h1>
               </div>
             </div>
-            <div class="col-4">
-              <img class="w-100 short" src="images/slide-one.jpg" alt="">
-              <img class="w-100 long" src="images/02.png" alt="">
+            <div class="carousel-item">
+              <div class="carousel-caption">
+                <span class="up-tilte">Parallax Header</span>
+                <h1>Interior <br>
+                  showroom</h1>
+
+              </div>
             </div>
-            <div class="col-4">
-              <img class="w-100 long" src="images/table.png" alt="">
-              <img class="w-100 short" src="images/slide-two.jpg" alt="">
+            <div class="carousel-item">
+              <div class="carousel-caption">
+                <span class="up-tilte">Parallax Header</span>
+                <h1>Interior <br>
+                  showroom</h1>
+
+              </div>
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+            <div class="carousel-control-circle">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </div>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
+            <div class="carousel-control-circle">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </div>
+          </button>
         </div>
       </div>
-    </div>
+       <!-- ========================= Main Wrapper ========================== -->
+      <div class="main-wrapper">
 
 
-    <!-- ========================= Explor Section ========================== -->
-    <div class="explor-section">
-      <div class="container">
-        <span class="up-tilte">Aussteller</span>
-        <h3 class="heading">Explore <br> <span class="head-one">Exhibitors</span> </h3>
-      </div>
-      <div class="container-fluid">
-        <div id="multi-slider" class="owl-carousel owl-theme">
-          <div class="slide-box">
-            <span class="number">01</span>
-            <div class="slide-ovelay">
-              <img src="images/slide-one.jpg" alt="">
-              <div class="hover-text">
-                <span>Trias</span>
+        <!-- ========================= About Section ========================== -->
+        <div class="about-section" >
+          <div class="container">
+            <span class="up-tilte">About HOUSE70</span>
+            <h2 class="heading">art & science <br><span class="head-one">of interior</span><br> <span
+                class="head-two">Design</span></h2>
+            <div class="about-text">
+              <p>Hinter HOUSE70 in der Julius Durst Straße 70 steckt weit mehr als nur die genaue Ortsbezeichnung.
+                Vielmehr wurde hier die Vision des Zusammenspiels hochqualifizierter Gewerke des Innenausbaus
+                verwirklicht.</p>
+              <p>Auf 2.500 Quadratmeter Ausstellungsfläche werden Kunden zu den Sektoren Küche, Inneneinrichtung,
+                Parkett
+                und Bodenbeläge, Wandgestaltung, Lichtplanung und Beleuchtung, Maßmöbel, Matratzen, Einrichtung für den
+                Außenbereich sowie die Planung und Einrichtung von Büroräumen bedient.</p>
+              <div class="text-center text-lg-start">
+                <a class="btn btn-custom" href="mailto:info@house70.it">Partner werden</a>
               </div>
             </div>
-            <h3>Trias</h3>
-            <div class="title-box">
-              <span class="sub-title">Privat- & Objekteinrichtung</span>
-              <a class="more-btn" href="">Show more</a>
-            </div>
-          </div>
-          <div class="slide-box">
-            <span class="number">02</span>
-            <div class="slide-ovelay">
-              <img src="images/slide-two.jpg" alt="">
-              <div class="hover-text">
-                <span>Saxl</span>
-              </div>
-            </div>
-            <h3>Saxl</h3>
-            <div class="title-box">
-              <span class="sub-title">Bödenbeläge</span>
-              <a class="more-btn" href="">Show more</a>
-            </div>
-          </div>
-          <div class="slide-box">
-            <span class="number">03</span>
-            <div class="slide-ovelay">
-              <img src="images/slide-three.jpg" alt="">
-              <div class="hover-text">
-                <span>Tischlerei goller</span>
-              </div>
-            </div>
-            <h3>Tischlerei goller</h3>
-            <div class="title-box">
-              <span class="sub-title">Tischler</span>
-              <a class="more-btn" href="">Show more</a>
-            </div>
-          </div>
-          <div class="slide-box">
-            <span class="number">04</span>
-            <div class="slide-ovelay">
-              <img src="images/slide-one.jpg" alt="">
-              <div class="hover-text">
-                <span>Trias</span>
-              </div>
-            </div>
-            <h3>Trias</h3>
-            <div class="title-box">
-              <span class="sub-title">Privat- & Objekteinrichtung</span>
-              <a class="more-btn" href="">Show more</a>
-            </div>
-          </div>
 
-        </div>
-      </div>
-    </div>
-    <!-- ========================= contact text part ========================== -->
-    <div class="contact-part ">
-      <p class="fist-line">Contact Us Contact Us Contact Us</p>
-      <p class="second-line">Contact Us Contact Us Contact Us</p>
-      <div class="contact-btn">
-        <span>Con <br> tact <br> Us</span>
-      </div>
-    </div>
-
-    <!-- ========================= Footer Section ========================== -->
-    <div class="footer-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-6">
-            <h6 class="heading">Get in <br> <span class="head-one">Touch</span> </h6>
-          </div>
-          <div class="col-12 col-lg-6">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <ul class="list-unstyled address">
-                  <li> HOUSE70</li>
-                  <li> Brixen I-39042</li>
-                  <li>Julius Durst Straße 70</li>
-                  <li>Tel +39 0472 971 206</li>
-                  <li>Fax +39 0472 971 205</li>
-                  <li>info@house70.com</li>
-                </ul>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="footer-btn">
-                  <a href="">
-                    <button type="button" class="btn btn-custom">Routenplaner</button>
-                  </a>
+            <div  class="about-gallery" data-cursor-text="See More">
+              <div id="gallery" class="row gx-2">
+                <div class="col-4">
+                  <img class="w-100 long lightboxed" rel="group1" data-link="images/03.jpg" alt="Image Alt 1" src="images/03.jpg" alt="">
+                  <div class="box">
+                    <a class="see-more-btn" href="">
+                      <span>See <br> More</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <img class="w-100 short lightboxed" rel="group1" data-link="images/slide-one.jpg" alt="Image Alt 2" src="images/slide-one.jpg" alt="">
+                  <img class="w-100 long lightboxed" rel="group1" data-link="images/02.png" alt="Image Alt 3"  src="images/02.png" alt="">
+                </div>
+                <div class="col-4">
+                  <img class="w-100 long lightboxed" rel="group1" data-link="images/table.png" alt="Image Alt 4" src="images/table.png" alt="">
+                  <img class="w-100 short lightboxed" rel="group1" data-link="images/slide-two.jpg" alt="Image Alt 5" src="images/slide-two.jpg" alt="">
                 </div>
               </div>
             </div>
@@ -254,29 +158,138 @@
         </div>
 
 
-        <div class="line"></div>
-        <div class="row">
-          <div class="col-12 col-md-6 text-center text-md-start order-2 order-md-1">
-            <img class="footer-logo" src="images/header-logo.svg" alt="">
+        <!-- ========================= Explor Section ========================== -->
+        <div class="explor-section">
+          <div class="container head-content">
+            <span class="up-tilte">Aussteller</span>
+            <h3 class="heading">Explore <br> <span class="head-one">Exhibitors</span> </h3>
           </div>
-          <div class="col-12 col-md-6 text-center text-lg-end order-1 order-md-2">
-            <ul class="list-unstyled list-inline social-link">
-              <li class="list-inline-item"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-              <li class="list-inline-item"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-              <li class="list-inline-item"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-            </ul>
+          <div class="container-fluid">
+            <div id="multi-slider" class="owl-carousel owl-theme">
+              <div class="slide-box">
+                <div class="slide-ovelay">
+                  <img src="images/slide-one.jpg" alt="">
+                  <div class="hover-text">
+                    <span>Trias</span>
+                  </div>
+                </div>
+                <h3>Trias</h3>
+                <div class="title-box">
+                  <span class="sub-title">Privat- & Objekteinrichtung</span>
+                  <a class="more-btn" href="https://www.trias.it/de/reference/wohnung-in-sterzing_3419">Show more</a>
+                </div>
+              </div>
+              <div class="slide-box">
+                <div class="slide-ovelay">
+                  <img src="images/slide-two.jpg" alt="">
+                  <div class="hover-text">
+                    <span>Saxl</span>
+                  </div>
+                </div>
+                <h3>Saxl</h3>
+                <div class="title-box">
+                  <span class="sub-title">Bödenbeläge</span>
+                  <a class="more-btn" href="https://www.trias.it/de/reference/wohnung-in-sterzing_3419">Show more</a>
+                </div>
+              </div>
+              <div class="slide-box">
+                <div class="slide-ovelay">
+                  <img src="images/slide-three.jpg" alt="">
+                  <div class="hover-text">
+                    <span>Tischlerei goller</span>
+                  </div>
+                </div>
+                <h3>Tischlerei goller</h3>
+                <div class="title-box">
+                  <span class="sub-title">Tischler</span>
+                  <a class="more-btn" href="https://www.trias.it/de/reference/wohnung-in-sterzing_3419">Show more</a>
+                </div>
+              </div>
+              <div class="slide-box">
+                <div class="slide-ovelay">
+                  <img src="images/slide-one.jpg" alt="">
+                  <div class="hover-text">
+                    <span>Trias</span>
+                  </div>
+                </div>
+                <h3>Trias</h3>
+                <div class="title-box">
+                  <span class="sub-title">Privat- & Objekteinrichtung</span>
+                  <a class="more-btn" href="https://www.trias.it/de/reference/wohnung-in-sterzing_3419">Show more</a>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-between btm-footer">
-            <ul class="list-unstyled btm-text d-md-flex">
-              <li>MwSt. Nr.: IT00707930210</li>
-              <li>Empfängerkodex: P62QHVQ</li>
-            </ul>
-            <ul class="list-unstyled btm-link d-flex">
-              <li><a href="">Impressum</a></li>
-              <li><a href="">Privacy</a></li>
-            </ul>
+        <!-- ========================= contact text part ========================== -->
+        <div class="contact-part" data-cursor-text="Contact Us">
+          <p class="fist-line">Contact Us Contact Us Contact Us</p>
+          <p class="second-line">Contact Us Contact Us Contact Us</p>
+          <a href="mailto:info@house70.it">
+            <div class="contact-btn">
+              <span>Con <br> tact <br> Us</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- ========================= Footer Section ========================== -->
+        <div class="footer-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <h6 class="heading">Get in <br> <span class="head-one">Touch</span> </h6>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <ul class="list-unstyled address">
+                      <li> HOUSE70</li>
+                      <li> Brixen I-39042</li>
+                      <li>Julius Durst Straße 70</li>
+                      <li>Tel +39 0472 971 206</li>
+                      <li>Fax +39 0472 971 205</li>
+                      <li>info@house70.com</li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="footer-btn">
+                      <a
+                        href="https://www.google.com/maps/place/HOUSE70/@46.6903857,11.6427595,15z/data=!4m2!3m1!1s0x0:0xd3c56648ea961375?sa=X&ved=2ahUKEwjpiaO20M__AhVaSPEDHb52COMQ_BJ6BAhUEAg">
+                        <button type="button" class="btn btn-custom">Routenplaner</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="line"></div>
+            <div class="row">
+              <div class="col-12 col-md-6 text-center text-md-start order-2 order-md-1">
+                <img class="footer-logo" src="images/header-logo.svg" alt="">
+              </div>
+              <div class="col-12 col-md-6 text-center text-lg-end order-1 order-md-2">
+                <ul class="list-unstyled list-inline social-link">
+                  <li class="list-inline-item"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li class="list-inline-item"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                  <li class="list-inline-item"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-between btm-footer">
+                <ul class="list-unstyled btm-text d-md-flex">
+                  <li>MwSt. Nr.: IT00707930210</li>
+                  <li>Empfängerkodex: P62QHVQ</li>
+                </ul>
+                <ul class="list-unstyled btm-link d-flex">
+                  <li><a href="">Impressum</a></li>
+                  <li><a href="">Privacy</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -285,16 +298,67 @@
 
 
 
+ 
+
+
 
   <!-- jquery -->
   <script src="js/jquery.min.js"></script>
+
+  <!-- litebox -->
+  <script src="lightbox/lightboxed.js"></script>
+
 
   <!-- owl carosuer -->
   <script src="owlcarousel/owl.carousel.min.js"></script>
 
 
+  <script>
+    const cursor = new MouseFollower({
+    el: null,
+    container: document.body,
+    className: 'mf-cursor',
+    innerClassName: 'mf-cursor-inner',
+    textClassName: 'mf-cursor-text',
+    mediaClassName: 'mf-cursor-media',
+    mediaBoxClassName: 'mf-cursor-media-box',
+    iconSvgClassName: 'mf-svgsprite',
+    iconSvgNamePrefix: '-',
+    iconSvgSrc: '',
+    dataAttr: 'cursor',
+    hiddenState: '-hidden',
+    textState: '-text',
+    iconState: '-icon',
+    activeState: '-active',
+    mediaState: '-media',
+    stateDetection: {
+        '-pointer': 'a,button',
+        '-hidden': 'iframe'
+    },
+    visible: true,
+    visibleOnState: false,
+    speed: 0.55,
+    ease: 'expo.out',
+    overwrite: true,
+    skewing: 0,
+    skewingText: 0,
+    skewingIcon: 2,
+    skewingMedia: 2,
+    skewingDelta: 0.001,
+    skewingDeltaMax: 0.15,
+    stickDelta: 0.15,
+    showTimeout: 20,
+    hideOnLeave: true,
+    hideTimeout: 300,
+    hideMediaTimeout: 300
+});
+  </script>
+
+
   <!-- bootstrap js -->
   <script src="js/bootstrap.bundle.min.js"></script>
+
+
   <!-- custom js -->
   <script src="js/script.js"></script>
 </body>
