@@ -515,6 +515,9 @@
     .head-content{
         margin-bottom: 110px;
     }
+    .mf-cursor{
+        display: none;
+    }
  
 }
 
