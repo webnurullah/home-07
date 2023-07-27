@@ -61,7 +61,11 @@ $(document).ready(function(){
                 
             }
         }
+
+        
     })
+
+
 });
 
 
@@ -69,43 +73,18 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+	// Mouse Design
+    $(".mouse-deisgn").on('mouseenter', function() {	
+        var $this = $(this);			
+        TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:'#fff', backgroundColor:'#fff'});
+        TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
+        $( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );				
+    });
+                        
+    $(".mouse-deisgn").on('mouseleave', function() {					
+        TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
+        TweenMax.to('#ball-loader', 0.2,{borderWidth: '4px', top: 0, left: 0});
+        $('#ball p').remove();				
+    });	
 
 
-const cursor = new MouseFollower({
-    el: null,
-    container: document.body,
-    className: 'mf-cursor',
-    innerClassName: 'mf-cursor-inner',
-    textClassName: 'mf-cursor-text',
-    mediaClassName: 'mf-cursor-media',
-    mediaBoxClassName: 'mf-cursor-media-box',
-    iconSvgClassName: 'mf-svgsprite',
-    iconSvgNamePrefix: '-',
-    iconSvgSrc: '',
-    dataAttr: 'cursor',
-    hiddenState: '-hidden',
-    textState: '-text',
-    iconState: '-icon',
-    activeState: '-active',
-    mediaState: '-media',
-    stateDetection: {
-        '-pointer': 'a,button',
-        '-hidden': 'iframe'
-    },
-    visible: true,
-    visibleOnState: false,
-    speed: 0.55,
-    ease: 'expo.out',
-    overwrite: true,
-    skewing: 0,
-    skewingText: 0,
-    skewingIcon: 2,
-    skewingMedia: 2,
-    skewingDelta: 0.001,
-    skewingDeltaMax: 0.15,
-    stickDelta: 0.15,
-    showTimeout: 20,
-    hideOnLeave: true,
-    hideTimeout: 300,
-    hideMediaTimeout: 300
-});

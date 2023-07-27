@@ -167,7 +167,9 @@
     .logoSlide-section .owl-theme .owl-nav{
         top: 38%;
     }
-  
+    .explor-section .swiper-slide {
+        width: 500px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -258,6 +260,9 @@
     }
     .logoSlide-section .owl-carousel .owl-item img {
         width: 140px;
+    }
+    .explor-section .swiper-slide {
+        width: 450px;
     }
     
 }
@@ -372,6 +377,11 @@
         left: 180px;
         top: -50px;
     }
+
+    .explor-section .swiper-slide {
+        width: 400px;
+    }
+
     /* -------------- about section --------- */
     .about-text p:nth-child(2){
         margin-top: 30px;
@@ -527,6 +537,10 @@
         padding-right: 30px;
         padding-left: 30px;
     }
+    .container-fluid {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
     body{
         font-size: 16px;
     }
@@ -585,6 +599,12 @@
         left: 80px;
         top: -50px;
     }
+
+
+    .explor-section .swiper-slide {
+        width: 330px;
+    }
+    
 }
 /* Small devices (landscape phones, 390px and up) */
 @media (max-width: 400px) {
@@ -594,4 +614,6 @@
     .second-section .inner-box {
         margin-top: -60px;
     }
-}   
+}
+
+
