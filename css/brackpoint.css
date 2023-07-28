@@ -212,11 +212,9 @@
     }
     .contact-part .fist-line {
         letter-spacing: -0.9px;
-        margin-left: -10px;
     }
     .contact-part .second-line{
         letter-spacing: 0.9px;
-        margin-left: 90px;
     }
     /* slider section */
     .explor-section .owl-stage-outer .owl-item:nth-child(even) {
@@ -470,6 +468,9 @@
    
     .btm-text li{
         font-size: 14px;
+    }
+    .btm-text{
+        text-align: center;
     }
     .btm-link li{
         font-size: 14px;

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8" />  
+  <meta charset="UTF-8" />
   <title>Home70</title>
 
 
@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="lightbox/lightboxed.css">
 
 
- 
+
 
   <!-- Fontawesome icon -->
   <script src="https://kit.fontawesome.com/fcea059855.js" crossorigin="anonymous"></script>
@@ -36,14 +36,14 @@
 
 
 
-  
+
 
 </head>
 
 <body>
 
   <div class="header-part">
-    <div class="fix-menu-icon">
+    <div class="fix-menu-icon d-none d-md-block">
       <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="">
         <img src="images/menu.svg" alt="">
       </a>
@@ -78,6 +78,11 @@
     <div class="body-inner">
       <!-- ========================= Hero Section ========================== -->
       <div class="hero-section">
+        <div class="fix-menu-icon d-block d-md-none">
+          <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="">
+            <img src="images/menu.svg" alt="">
+          </a>
+        </div>
         <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <img class="header-logo" src="images/header-logo.svg" alt="logo">
@@ -119,15 +124,15 @@
           </button>
         </div>
       </div>
-       <!-- ========================= Main Wrapper ========================== -->
+      <!-- ========================= Main Wrapper ========================== -->
       <div class="main-wrapper">
 
 
         <!-- ========================= About Section ========================== -->
-        <div class="has-animation" >
-          <div class="mouse-deisgn disable-drag" data-firstline="SEE" data-secondline="MORE" >
+        <div class="has-animation">
+          <div class="mouse-deisgn disable-drag" data-firstline="SEE" data-secondline="MORE">
             <div class="about-section">
-              <div class="container" >
+              <div class="container">
                 <span class="up-tilte">About HOUSE70</span>
                 <h2 class="heading">art & science <br><span class="head-one">of interior</span><br> <span
                     class="head-two">Design</span></h2>
@@ -137,30 +142,36 @@
                     verwirklicht.</p>
                   <p>Auf 2.500 Quadratmeter Ausstellungsfläche werden Kunden zu den Sektoren Küche, Inneneinrichtung,
                     Parkett
-                    und Bodenbeläge, Wandgestaltung, Lichtplanung und Beleuchtung, Maßmöbel, Matratzen, Einrichtung für den
+                    und Bodenbeläge, Wandgestaltung, Lichtplanung und Beleuchtung, Maßmöbel, Matratzen, Einrichtung für
+                    den
                     Außenbereich sowie die Planung und Einrichtung von Büroräumen bedient.</p>
                   <div class="text-center text-lg-start">
                     <a class="btn btn-custom" href="mailto:info@house70.it">Partner werden</a>
                   </div>
                 </div>
-    
-                <div  class="about-gallery">
+
+                <div class="about-gallery">
                   <div id="gallery" class="row gx-2">
                     <div class="col-4">
-                      <img class="w-100 long lightboxed" rel="group1" data-link="images/03.jpg" alt="Image Alt 1" src="images/03.jpg" alt="">
+                      <img class="w-100 long lightboxed" rel="group1" data-link="images/03.jpg" alt="Image Alt 1"
+                        src="images/03.jpg" alt="">
                       <div class="box">
-                        <a class="see-more-btn" href="">
+                        <a type="button" class="see-more-btn lightboxed" href="images/slide-two.jpg" rel="group1" data-link="images/slide-two.jpg">
                           <span>See <br> More</span>
                         </a>
                       </div>
                     </div>
                     <div class="col-4">
-                      <img class="w-100 short lightboxed" rel="group1" data-link="images/slide-one.jpg" alt="Image Alt 2" src="images/slide-one.jpg" alt="">
-                      <img class="w-100 long lightboxed" rel="group1" data-link="images/02.png" alt="Image Alt 3"  src="images/02.png" alt="">
+                      <img class="w-100 short lightboxed" rel="group1" data-link="images/slide-one.jpg"
+                        alt="Image Alt 2" src="images/slide-one.jpg" alt="">
+                      <img class="w-100 long lightboxed" rel="group1" data-link="images/02.png" alt="Image Alt 3"
+                        src="images/02.png" alt="">
                     </div>
                     <div class="col-4">
-                      <img class="w-100 long lightboxed" rel="group1" data-link="images/table.png" alt="Image Alt 4" src="images/table.png" alt="">
-                      <img class="w-100 short lightboxed" rel="group1" data-link="images/slide-two.jpg" alt="Image Alt 5" src="images/slide-two.jpg" alt="">
+                      <img class="w-100 long lightboxed" rel="group1" data-link="images/table.png" alt="Image Alt 4"
+                        src="images/table.png" alt="">
+                      <img class="w-100 short lightboxed" rel="group1" data-link="images/slide-two.jpg"
+                        alt="Image Alt 5" src="images/slide-two.jpg" alt="">
                     </div>
                   </div>
                 </div>
@@ -168,25 +179,27 @@
             </div>
           </div>
         </div>
-        
+
 
 
 
         <!-- ========================= Explor Section ========================== -->
-        <div class="explor-section " >
+        <div class="explor-section ">
           <div class="container head-content">
             <span class="up-tilte">Aussteller</span>
             <h3 class="heading">Explore <br> <span class="head-one">Exhibitors</span> </h3>
           </div>
           <div class="container-fluid content-carousel disable-drag has-animation autocenter">
-            <div class="swiper-wrapper" >
+            <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="slide-ovelay">
-                  <img src="images/slide-one.jpg" alt="">
-                  <div class="hover-text">
-                    <span>Trias</span>
+                <a href="https://www.trias.it/de/reference/wohnung-in-sterzing_3419">
+                  <div class="slide-ovelay">
+                    <img src="images/slide-one.jpg" alt="">
+                    <div class="hover-text">
+                      <span>Trias</span>
+                    </div>
                   </div>
-                </div>
+                </a>
                 <h3>Trias</h3>
                 <div class="title-box">
                   <span class="sub-title">Privat- & Objekteinrichtung</span>
@@ -194,12 +207,14 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="slide-ovelay">
-                  <img src="images/slide-two.jpg" alt="">
-                  <div class="hover-text">
-                    <span>Saxl</span>
+                <a href="https://www.trias.it/de/reference/wohnung-in-sterzing_3419">
+                  <div class="slide-ovelay">
+                    <img src="images/slide-two.jpg" alt="">
+                    <div class="hover-text">
+                      <span>Saxl</span>
+                    </div>
                   </div>
-                </div>
+                </a>
                 <h3>Saxl</h3>
                 <div class="title-box">
                   <span class="sub-title">Bödenbeläge</span>
@@ -207,12 +222,14 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="slide-ovelay">
-                  <img src="images/slide-three.jpg" alt="">
-                  <div class="hover-text">
-                    <span>Tischlerei goller</span>
+                <a href="https://www.trias.it/de/reference/wohnung-in-sterzing_3419">
+                  <div class="slide-ovelay">
+                    <img src="images/slide-three.jpg" alt="">
+                    <div class="hover-text">
+                      <span>Tischlerei goller</span>
+                    </div>
                   </div>
-                </div>
+                </a>
                 <h3>Tischlerei goller</h3>
                 <div class="title-box">
                   <span class="sub-title">Tischler</span>
@@ -220,12 +237,14 @@
                 </div>
               </div>
               <div class="swiper-slide">
+                <a href="https://www.trias.it/de/reference/wohnung-in-sterzing_3419"></a>
                 <div class="slide-ovelay">
                   <img src="images/slide-one.jpg" alt="">
                   <div class="hover-text">
                     <span>Trias</span>
                   </div>
                 </div>
+                </a>
                 <h3>Trias</h3>
                 <div class="title-box">
                   <span class="sub-title">Privat- & Objekteinrichtung</span>
@@ -233,15 +252,21 @@
                 </div>
               </div>
               <div class="swiper-slide">
+                <a href="https://www.trias.it/de/reference/wohnung-in-sterzing_3419"></a>
                 <div class="slide-ovelay">
-                  <img src="images/slide-one.jpg" alt="">
+
+                  <img src="images/slide-two.jpg" alt="">
                   <div class="hover-text">
-                    <span>Trias</span>
+                    <span>Saxl</span>
                   </div>
+
+
+
                 </div>
-                <h3>Trias</h3>
+                </a>
+                <h3>Saxl</h3>
                 <div class="title-box">
-                  <span class="sub-title">Privat- & Objekteinrichtung</span>
+                  <span class="sub-title">Bödenbeläge</span>
                   <a class="more-btn" href="https://www.trias.it/de/reference/wohnung-in-sterzing_3419">Show more</a>
                 </div>
               </div>
@@ -249,16 +274,26 @@
 
             <div class="slider-button-next"></div>
             <div class="slider-button-prev"></div>
-          
+
           </div>
         </div>
         <!-- ========================= contact text part ========================== -->
+
+        
+
+
         <div class="has-animation">
           <div class="mouse-deisgn disable-drag" data-firstline="CONTACT" data-secondline="US">
             <a href="mailto:info@house70.it">
-              <div class="contact-part" >
-                <p class="fist-line">Contact Us Contact Us Contact Us</p>
-                <p class="second-line">Contact Us Contact Us Contact Us</p>
+              <div class="contact-part">
+
+               <div class="content-marquee-wrapper">
+                <p class="content-marquee fist-line" data-text="Contact Us Contact Us Contact Us">Contact Us Contact Us Contact Us</p>
+               </div>
+               <div class="content-marquee-wrapper1">
+                <p class="content-marquee1 second-line" data-text-one="Contact Us Contact Us Contact Us">Contact Us Contact Us Contact Us</p>
+               </div>
+                
                 <a href="mailto:info@house70.it">
                   <div class="contact-btn">
                     <span>Con <br> tact <br> Us</span>
@@ -268,8 +303,8 @@
             </a>
           </div>
         </div>
-       
-      
+
+
 
         <!-- ========================= Footer Section ========================== -->
         <div class="footer-section">
@@ -336,17 +371,17 @@
 
 
 
-          
-  
-    
-        
-        
-        <div id="magic-cursor">
-            <div id="ball">
-              <div id="ball-drag"></div>
-              <div id="ball-loader"></div>
-            </div>
-        </div>
+
+
+
+
+
+  <div id="magic-cursor">
+    <div id="ball">
+      <div id="ball-drag"></div>
+      <div id="ball-loader"></div>
+    </div>
+  </div>
 
 
 
@@ -366,17 +401,18 @@
 
 
   <!-- custom js -->
-  <script src="js/script.js"></script> 
+  <script src="js/script.js"></script>
 
 
 
 
-  
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js" ></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&sensor=false"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js"></script>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&sensor=false"></script>
 
 
   <script src="js/plugins.js"></script>

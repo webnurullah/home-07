@@ -31,7 +31,7 @@
 <body>
 
   <div class="header-part">
-    <div class="fix-menu-icon">
+    <div class="fix-menu-icon d-none d-md-block">
       <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="">
         <img src="images/menu.svg" alt="">
       </a>
@@ -61,10 +61,16 @@
     <div class="body-inner">
     <!-- ========================= Hero Section ========================== -->
     <div class="header-banner d-flex flex-column justify-content-center">
+      <div class="fix-menu-icon d-block d-md-none">
+        <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="">
+          <img src="images/menu.svg" alt="">
+        </a>
+      </div>
       <span class="title" >Trias</span>
       <div class="banner-caption">
           <span class="up-tilte">Trias</span>
-          <h1>Einrichtung für <br> hochwertiges <br> Wohnen</h1>
+          <h1 class="d-none d-md-block" >Einrichtung für <br> hochwertiges <br> Wohnen</h1>
+          <h1 class="d-md-none">EINRICHTUNG FÜR HOCH-WERTIGES WOHNEN</h1>
       </div>
     </div>
     <!-- ========================= Main Wrapper ========================== -->
