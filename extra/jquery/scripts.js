@@ -182,7 +182,7 @@ function Sliders() {
 			var ContentLoopedCarouselOptions = {			
 				direction: 'horizontal',
 				simulateTouch: true,
-				slidesPerView: 'auto',
+				slidesPerView: '5',
 				centeredSlides: false,
 				loop:true,
 				spaceBetween: 45,
@@ -193,10 +193,16 @@ function Sliders() {
 					prevEl: ".swiper-button-prev",
 				  },
 				breakpoints: {
+				  1: {
+					slidesPerView: '3',
+					spaceBetween: 0,
+				  },
 				  576: {
+					slidesPerView: '3',
 					spaceBetween: 0,
 				  },
 				  768: {
+					slidesPerView: '3',
 					spaceBetween: 25,
 				  },
 				  992: {

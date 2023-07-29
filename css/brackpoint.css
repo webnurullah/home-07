@@ -88,9 +88,7 @@
         width: 54px;
         height: 54px;
     }
-    .explor-section .owl-carousel .owl-item img{
-        width: 440px;
-    }
+    
     .explor-section .swiper-slide .number{
         font-size: 70px;
         
@@ -100,9 +98,6 @@
     }
     .explor-section {
         padding: 150px 0px 125px;
-    }
-    .explor-section .owl-theme .owl-nav{
-        top: -100px;
     }
     .head-content {
         margin-bottom: 50px;
@@ -154,18 +149,9 @@
     .logoSlide-section {
         padding: 130px 0px;
     }
-    #logo-slider {
+    .logo-slider {
         padding-top: 50px;
         padding-bottom: 50px;
-    }
-    .logoSlide-section .owl-prev {
-        left: -20px;
-    }
-    .logoSlide-section .owl-next {
-        right: -20px;
-    }
-    .logoSlide-section .owl-theme .owl-nav{
-        top: 38%;
     }
     .explor-section .swiper-slide {
         width: 500px;
@@ -223,10 +209,6 @@
     .explor-section .swiper-slide:nth-child(even) {
         margin-top: 50px;
     }
-    .explor-section .owl-carousel .owl-item img{
-        width:440px;
-       
-    }
     .explor-section .swiper-slide .number{
         font-size: 50px;
     }
@@ -265,7 +247,9 @@
     .explor-section .swiper-slide {
         width: 450px;
     }
-    
+    .tooltip {
+        display: none !important;
+    }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
@@ -342,9 +326,6 @@
         bottom: -50px;
     }
     /* ------------slider section -------------- */
-    .explor-section .owl-carousel .owl-item img{
-        width:330px;
-    }
     .explor-section {
         padding: 125px 0px 60px;
     }
@@ -374,11 +355,6 @@
     .explor-section .heading{
         margin-bottom: 110px;
     }
-    .explor-section .owl-theme .owl-nav{
-        left: 180px;
-        top: -50px;
-    }
-
     .explor-section .swiper-slide {
         width: 400px;
     }
@@ -519,7 +495,7 @@
     .logoSlide-section {
         padding: 110px 0px;
     }
-    #logo-slider {
+    .logo-slider {
         padding-top: 40px;
         padding-bottom: 40px;
     }
@@ -599,12 +575,6 @@
     .logoSlide-section img{
         width: 96px;
     }
-    .explor-section .owl-theme .owl-nav{
-        left: 80px;
-        top: -50px;
-    }
-
-
     .explor-section .swiper-slide {
         width: 330px;
     }
