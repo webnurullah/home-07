@@ -79,34 +79,34 @@ function Sliders() {
 			var swiper = new Swiper(".content-slider", ContentSliderOptions);
 			
 			$(".slider-button-prev").mouseenter(function(e) {	
-				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#c19a5b',});
 				TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 				$( "#ball" ).addClass("with-icon").append( '<i class="fa fa-chevron-left"></i>' );
 			});
 				
 			$(".slider-button-prev").mouseleave(function(e) {
-				TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999',});
-				TweenMax.to('#ball-loader', 0.2,{borderWidth: '4px', top: 0, left: 0});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b',});
+				TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 0, left: 0});
 				$("#ball").removeClass("with-icon");
 				$('#ball i').remove();
 			});
 			
 			$(".slider-button-next").mouseenter(function(e) {	
-				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#c19a5b',});
 				TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 				$( "#ball" ).addClass("with-icon").append( '<i class="fa fa-chevron-right"></i>' );
 			});
 				
 			$(".slider-button-next").mouseleave(function(e) {
-				TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999',});
-				TweenMax.to('#ball-loader', 0.2,{borderWidth: '4px', top: 0, left: 0});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b',});
+				TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 0, left: 0});
 				$("#ball").removeClass("with-icon");
 				$('#ball i').remove();
 			});
 			
 		}
 		
-		
+		// multi slider carousel
 		if( $('.content-carousel').length > 0 ){
 		
 			var ContentCarouselOptions = {			
@@ -115,6 +115,10 @@ function Sliders() {
 				spaceBetween: 50,
 				mousewheelControl: false,
 				speed: 700,	
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				  },
 				breakpoints: {
 				  576: {
 					spaceBetween: 20,
@@ -129,7 +133,12 @@ function Sliders() {
 				
 					spaceBetween: 50,
 				  },
-				}	
+				},
+				scrollbar: {
+					el: ".swiper-scrollbar",
+					hide: true,
+					draggable: true,
+				}
 			}
 
 			
@@ -147,12 +156,12 @@ function Sliders() {
 			});
 			
 			$('.content-carousel').on('mouseenter mousemove', function() {	
-				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#c19a5b',});
 				$("body" ).addClass("scale-drag");
 			});
 				
 			$('.content-carousel').on('mouseleave', function() {
-				TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999',});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b',});
 				$("body").removeClass("scale-drag").removeClass("drag-cursor");
 			});
 			
@@ -162,6 +171,7 @@ function Sliders() {
 			});
 		
 		}
+
 		
 
 
@@ -173,37 +183,55 @@ function Sliders() {
 				direction: 'horizontal',
 				simulateTouch: true,
 				slidesPerView: 'auto',
-				spaceBetween: 150,
-				centeredSlides: true,
+				centeredSlides: false,
 				loop:true,
+				spaceBetween: 45,
 				mousewheelControl: false,
-				speed: 700,			
+				speed: 700,	
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				  },
+				breakpoints: {
+				  576: {
+					spaceBetween: 0,
+				  },
+				  768: {
+					spaceBetween: 25,
+				  },
+				  992: {
+					slidesPerView: '3',
+					spaceBetween: 30,
+				  },
+				  1200: {
+					slidesPerView: '4',
+					spaceBetween: 35,
+				  },
+				  1600: {
+					slidesPerView: '5',
+					spaceBetween: 45,
+				  },
+				}	
 			}
+
+
+
 			
 			var swiper = new Swiper(".content-looped-carousel", ContentLoopedCarouselOptions);
 			
-			$('.content-looped-carousel').on('mousedown touchstart', function(event) {
-				TweenMax.to('.swiper-slide img', 0.7,{scale: 0.9});
-				$("body").addClass("drag-cursor");
-			});
-			
-			$('body').on('mouseup touchend', function(event) {
-				TweenMax.to('.swiper-slide img', 0.7,{scale:1});
-				$("body").removeClass("drag-cursor");
-			});
+		
 			
 			$('.content-looped-carousel').on('mouseenter mousemove', function() {	
-				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#c19a5b',});
 				$("body" ).addClass("scale-drag");
 			});
 				
 			$('.content-looped-carousel').on('mouseleave', function() {
-				TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999',});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b',});
 				$("body").removeClass("scale-drag").removeClass("drag-cursor");
 			});
 			
 			$("body").mouseleave(function(e) {
-				TweenMax.to('.swiper-slide img', 0.7,{scale:1});
 				$("body").removeClass("scale-drag").removeClass("drag-cursor");
 			});
 		
@@ -232,14 +260,14 @@ Function Page Load
 		// Page Navigation Events
 		$(".preloader-wrap").on('mouseenter', function() {	
 			var $this = $(this);			
-			TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:'#fff', backgroundColor:'#fff'});
+			TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:'#c19a5b', backgroundColor:'#transparent'});
 			TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 			$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );				
 		});
 							
 		$(".preloader-wrap").on('mouseleave', function() {					
-			TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-			TweenMax.to('#ball-loader', 0.2,{borderWidth: '4px', top: 0, left: 0});
+			TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b', backgroundColor:'transparent'});
+			TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 0, left: 0});
 			$('#ball p').remove();				
 		});		
 		
@@ -290,8 +318,8 @@ Function Page Load
 				
 				$('body').waitForImages({
 						finished: function() {
-							TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-							TweenMax.to('#ball-loader', 0.2,{borderWidth: '4px', top: 0, left: 0});
+							TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b', backgroundColor:'transparent'});
+							TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 0, left: 0});
 							$('#ball p').remove();
 							TweenMax.to($(" .trackbar, .percentage"),0.3, {force3D:true, opacity:0, y:-10, delay:0, ease:Power2.easeIn});
 							TweenMax.to($(" .preloader-marquee"),0.5, {force3D:true, opacity:0, y:-40, delay:0.1, ease:Power2.easeIn});							
@@ -451,7 +479,7 @@ Function First Load
 			$(".fullscreen-menu .menu-timeline").each(function(index, element) {
 				tlMenu.to(element, 0.25, {y:-30, opacity:0, ease:Power2.easeIn}, index * 0.03)
 			});	
-			TweenMax.to('#ball', 0.3,{borderWidth:"4px",scale:0.5,backgroundColor:"rgba(0, 0, 0, 0)",opacity:1});			
+			TweenMax.to('#ball', 0.3,{borderWidth:"2px",scale:0.5,backgroundColor:"rgba(0, 0, 0, 0)",opacity:1});			
 			TweenMax.to($("#main, #hero-image-wrapper, #project-nav, .next-project-image, #app"), 0.3, {opacity:0, delay:0.1, ease:Power0.ease});					
 			TweenMax.to($("#footer-container, .header-middle"), 0.3, {opacity:0, ease:Power0.ease});			
 			TweenMax.to('#show-filters, #counter-wrap', 0.2,{opacity:0});
@@ -463,7 +491,7 @@ Function First Load
 			TweenMax.to($(".swiper-prev"), 0.3, {force3D:true, opacity:0, delay:0, ease:Power2.easeOut});
 			TweenMax.to($(".swiper-pagination .swiper-pagination-bullet"), 0.3, {force3D:true, opacity:0, delay:0.1, ease:Power2.easeOut});
 			TweenMax.to($(".swiper-next"), 0.3, {force3D:true, opacity:0, delay:0.15, ease:Power2.easeOut});
-			TweenMax.to('#ball', 0.3,{borderWidth:"4px",scale:0.5,backgroundColor:"rgba(0, 0, 0, 0)",opacity:1});
+			TweenMax.to('#ball', 0.3,{borderWidth:"2px",scale:0.5,backgroundColor:"rgba(0, 0, 0, 0)",opacity:1});
 			$("body").addClass("load-project-page").addClass("show-loader");
 		});
 		
@@ -536,14 +564,14 @@ Function First Load
 		// Page Navigation Events
 		$(".next-ajax-link-page").on('mouseenter', function() {	
 			var $this = $(this);			
-			TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:'#fff', backgroundColor:'#fff'});
+			TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:'#c19a5b', backgroundColor:'#fff'});
 			TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 			$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );				
 		});
 							
 		$(".next-ajax-link-page").on('mouseleave', function() {					
-			TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-			TweenMax.to('#ball-loader', 0.2,{borderWidth: '4px', top: 0, left: 0});
+			TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b', backgroundColor:'transparent'});
+			TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 0, left: 0});
 			$('#ball p').remove();				
 		});				
 		
@@ -555,8 +583,8 @@ Function First Load
 			$("#app").remove();
 			$(".big-title-caption").remove();	
 				
-			TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-			TweenMax.to('#ball-loader', 0.2,{borderWidth: '4px', top: 0, left: 0});
+			TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b', backgroundColor:'transparent'});
+			TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 0, left: 0});
 			$("#ball").removeClass("with-icon");
 			$('#ball p').remove();
 			$('#ball i').remove();	
@@ -584,14 +612,14 @@ Function First Load
 		// Project Navigation Events
 		$("#project-nav .item-image").mouseenter(function(e) {	
 			var $this = $(this);		
-			TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:'#fff', backgroundColor:'#fff'});
+			TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:'#c19a5b', backgroundColor:'#fff'});
 			TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 			$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );
 		});
 						
 		$("#project-nav .item-image").mouseleave(function(e) {
-			TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-			TweenMax.to('#ball-loader', 0.2,{borderWidth: '4px', top: 0, left: 0});
+			TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b', backgroundColor:'transparent'});
+			TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 0, left: 0});
 			$('#ball p').remove();
 		});	
 		
@@ -601,7 +629,7 @@ Function First Load
 			$("#app").remove();
 			$(".big-title-caption").remove();	
 					
-			TweenMax.to('#ball', 0.3,{borderWidth:"4px",scale:0.5,backgroundColor:"rgba(0, 0, 0, 0)",opacity:1});
+			TweenMax.to('#ball', 0.3,{borderWidth:"2px",scale:0.5,backgroundColor:"rgba(0, 0, 0, 0)",opacity:1});
 			if ($('#project-nav').hasClass("light-content")) {				
 				setTimeout(function(){
 					$('body').addClass('light-content');								
@@ -877,12 +905,12 @@ Function Showcase Slider
 				});				
 				
 				$('#showcase-slider-holder').on('mousedown touchstart', function() {	
-					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#c19a5b',});
 					$("body" ).addClass("scale-drag");
 				});
 					
 				$('#showcase-slider-holder').on('mouseup touchend', function() {
-					TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999',});
+					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b',});
 					$("body").removeClass("scale-drag").removeClass("drag-cursor");
 				});
 				
@@ -892,14 +920,14 @@ Function Showcase Slider
 				
 				$("#showcase-slider-holder .stroked .move-title").mouseenter(function(e) {	
 					var $this = $(this);		
-					TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:'#fff', backgroundColor:'#fff'});
+					TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:'#c19a5b', backgroundColor:'transparent'});
 					TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 					$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );
 				});
 								
 				$("#showcase-slider-holder .stroked .move-title").mouseleave(function(e) {
-					TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-					TweenMax.to('#ball-loader', 0.2,{borderWidth: '4px', top: 0, left: 0});
+					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b', backgroundColor:'transparent'});
+					TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 0, left: 0});
 					$('#ball p').remove();
 				});	
 			
@@ -1032,12 +1060,12 @@ Function Showcase Carousel
 							
 				
 				$('#showcase-carousel-holder').on('mousedown touchstart', function() {	
-					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#c19a5b',});
 					$("body" ).addClass("scale-drag");
 				});
 					
 				$('#showcase-carousel-holder').on('mouseup touchend', function() {
-					TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999',});
+					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b',});
 					$("body").removeClass("scale-drag").removeClass("drag-cursor");
 				});
 				
@@ -1047,14 +1075,14 @@ Function Showcase Carousel
 				
 				$("#showcase-carousel-holder .stroked .move-title").mouseenter(function(e) {	
 					var $this = $(this);		
-					TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:'#fff', backgroundColor:'#fff'});
+					TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1.2, borderColor:'#c19a5b', backgroundColor:'transparent'});
 					TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 					$( "#ball" ).append( '<p class="first">' + $this.data("firstline") + '</p>' + '<p>' + $this.data("secondline") + '</p>' );
 				});
 								
 				$("#showcase-carousel-holder .stroked .move-title").mouseleave(function(e) {
-					TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999', backgroundColor:'transparent'});
-					TweenMax.to('#ball-loader', 0.2,{borderWidth: '4px', top: 0, left: 0});
+					TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b', backgroundColor:'transparent'});
+					TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 0, left: 0});
 					$('#ball p').remove();
 				});	
 				
@@ -1123,7 +1151,7 @@ Function Portfolio
 			
 			
 			$(".item-image").mouseenter(function(e) {	
-				TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1, borderColor:'#fff'});
+				TweenMax.to('#ball', 0.3,{borderWidth: '2px', scale: 1, borderColor:'#c19a5b'});
 				TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 				$( "#ball" ).addClass("with-icon").append( '<i class="fa fa-plus"></i>' );
 				$(this).parent().find('video').each(function() {
@@ -1132,8 +1160,8 @@ Function Portfolio
 			});
 							
 			$(".item-image").mouseleave(function(e) {
-				TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999'});
-				TweenMax.to('#ball-loader', 0.2,{borderWidth: '4px', top: 0, left: 0});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b'});
+				TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 0, left: 0});
 				$("#ball").removeClass("with-icon");
 				$('#ball i').remove();
 				$(this).parent().find('video').each(function() {
@@ -1186,7 +1214,7 @@ Function Portfolio
 						$(".filters-timeline, .jssocials-share").each(function(index, element) {
 							tlMenu.to(element, 0.25, {opacity:0, y:-60, delay:0.1, ease:Power1.easeIn }, index * 0.1)
 						});	
-						TweenMax.to('#ball', 0.1,{borderWidth: '4px', scale:0.5,});
+						TweenMax.to('#ball', 0.1,{borderWidth: '2px', scale:0.5,});
 						$("#ball").removeClass("close-icon");
 						$('#ball i').remove();
 						
@@ -1196,14 +1224,14 @@ Function Portfolio
 			
 			
 			$("#close-filters").mouseenter(function(e) {	
-				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#c19a5b',});
 				TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 				$( "#ball" ).addClass("close-icon").append( '<i class="fa fa-times"></i>' );
 			});
 				
 			$("#close-filters").mouseleave(function(e) {
-				TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999',});
-				TweenMax.to('#ball-loader', 0.2,{borderWidth: '4px', top: 0, left: 0});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b',});
+				TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 0, left: 0});
 				$("#ball").removeClass("close-icon");
 				$('#ball i').remove();
 			});
@@ -1325,14 +1353,14 @@ Function Lightbox
 		});
 		
 		$(".image-link").mouseenter(function(e) {	
-			TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+			TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#c19a5b',});
 			TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
 			$( "#ball" ).addClass("with-icon").append( '<i class="fa fa-plus"></i>' );
 		});
 			
 		$(".image-link").mouseleave(function(e) {
-			TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999',});
-			TweenMax.to('#ball-loader', 0.2,{borderWidth: '4px', top: 0, left: 0});
+			TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b',});
+			TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 0, left: 0});
 			$("#ball").removeClass("with-icon");
 			$('#ball i').remove();
 		});
@@ -1394,12 +1422,12 @@ Function Page PlayVideo
 				if ($(this).hasClass("play")) {
 					$( "#ball" ).addClass("pause-movie")		
 				}
-				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#c19a5b',});
 				$( "#ball" ).addClass("over-movie").append( '<i class="fa fa-play"></i><i class="fa fa-pause"></i>' );
 			});
 			
 			$(".video-wrapper").mouseleave(function(e) {
-				TweenMax.to('#ball', 0.2,{borderWidth: '4px', scale:0.5, borderColor:'#999999',});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b',});
 				$("#ball").removeClass("over-movie").removeClass("pause-movie");
 				$('#ball i').remove();
 			});
@@ -1409,7 +1437,7 @@ Function Page PlayVideo
 			});
 			
 			$(".video-wrapper .control").mouseleave(function(e) {
-				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#fff',});
+				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#c19a5b',});
 			});
 			
 			var videocenter = ($(window).height() - $('.video-cover').height()) / 2
@@ -1650,240 +1678,7 @@ Function Page PlayVideo
 	
 	
 	/*--------------------------------------------------
-Function Contact Map
----------------------------------------------------*/	
-		
-	function ContactMap() {	
-	
-		if( jQuery('#map_canvas').length > 0 ){					
-			var latlng = new google.maps.LatLng(43.270441,6.640888);
-			var settings = {
-				zoom: 14,
-				center: new google.maps.LatLng(43.270441,6.640888),
-				mapTypeControl: false,
-				scrollwheel: false,
-				draggable: true,
-				panControl:false,
-				scaleControl: false,
-				zoomControl: false,
-				streetViewControl:false,
-				navigationControl: false};			
-				var newstyle = [
-				{
-					"featureType": "all",
-					"elementType": "labels.text.fill",
-					"stylers": [
-						{
-							"saturation": 36
-						},
-						{
-							"color": "#000000"
-						},
-						{
-							"lightness": 40
-						}
-					]
-				},
-				{
-					"featureType": "all",
-					"elementType": "labels.text.stroke",
-					"stylers": [
-						{
-							"visibility": "on"
-						},
-						{
-							"color": "#000000"
-						},
-						{
-							"lightness": 16
-						}
-					]
-				},
-				{
-					"featureType": "all",
-					"elementType": "labels.icon",
-					"stylers": [
-						{
-							"visibility": "off"
-						}
-					]
-				},
-				{
-					"featureType": "administrative",
-					"elementType": "geometry.fill",
-					"stylers": [
-						{
-							"color": "#000000"
-						},
-						{
-							"lightness": 20
-						}
-					]
-				},
-				{
-					"featureType": "administrative",
-					"elementType": "geometry.stroke",
-					"stylers": [
-						{
-							"color": "#000000"
-						},
-						{
-							"lightness": 17
-						},
-						{
-							"weight": 1.2
-						}
-					]
-				},
-				{
-					"featureType": "landscape",
-					"elementType": "geometry",
-					"stylers": [
-						{
-							"color": "#000000"
-						},
-						{
-							"lightness": 20
-						}
-					]
-				},
-				{
-					"featureType": "poi",
-					"elementType": "geometry",
-					"stylers": [
-						{
-							"color": "#000000"
-						},
-						{
-							"lightness": 21
-						}
-					]
-				},
-				{
-					"featureType": "road.highway",
-					"elementType": "geometry.fill",
-					"stylers": [
-						{
-							"color": "#000000"
-						},
-						{
-							"lightness": 17
-						}
-					]
-				},
-				{
-					"featureType": "road.highway",
-					"elementType": "geometry.stroke",
-					"stylers": [
-						{
-							"color": "#000000"
-						},
-						{
-							"lightness": 29
-						},
-						{
-							"weight": 0.2
-						}
-					]
-				},
-				{
-					"featureType": "road.arterial",
-					"elementType": "geometry",
-					"stylers": [
-						{
-							"color": "#000000"
-						},
-						{
-							"lightness": 18
-						}
-					]
-				},
-				{
-					"featureType": "road.local",
-					"elementType": "geometry",
-					"stylers": [
-						{
-							"color": "#000000"
-						},
-						{
-							"lightness": 16
-						}
-					]
-				},
-				{
-					"featureType": "transit",
-					"elementType": "geometry",
-					"stylers": [
-						{
-							"color": "#000000"
-						},
-						{
-							"lightness": 19
-						}
-					]
-				},
-				{
-					"featureType": "water",
-					"elementType": "geometry",
-					"stylers": [
-						{
-							"color": "#000000"
-						},
-						{
-							"lightness": 17
-						}
-					]
-				}
-			];
-			var mapOptions = {
-				styles: newstyle,
-				mapTypeControlOptions: {
-					 mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'holver']
-				}
-			};
-			var map = new google.maps.Map(document.getElementById("map_canvas"), settings);	
-			var mapType = new google.maps.StyledMapType(newstyle, { name:"Grayscale" });    
-				map.mapTypes.set('holver', mapType);
-				map.setMapTypeId('holver');
-						
-			
-			google.maps.event.addDomListener(window, "resize", function() {
-				var center = map.getCenter();
-				google.maps.event.trigger(map, "resize");
-				map.setCenter(center);
-			});	
-			var contentString = '<div id="content-map-marker" style="text-align:center; padding-top:10px; padding-left:10px">'+
-				'<div id="siteNotice">'+
-				'</div>'+
-				'<h4 id="firstHeading" class="firstHeading" style="color:#000!important; font-weight:600; margin-bottom:0px;">Hello Friend!</h4>'+
-				'<div id="bodyContent">'+
-				'<p color:#999; font-size:14px; margin-bottom:10px">Here we are. Come to drink a coffee!</p>'+
-				'</div>'+
-				'</div>';
-			var infowindow = new google.maps.InfoWindow({
-				content: contentString
-			});	
-			var companyImage = new google.maps.MarkerImage('images/marker.png',
-				new google.maps.Size(58,63),<!-- Width and height of the marker -->
-				new google.maps.Point(0,0),
-				new google.maps.Point(35,20)<!-- Position of the marker -->
-			);
-			var companyPos = new google.maps.LatLng(43.270441,6.640888);	
-			var companyMarker = new google.maps.Marker({
-				position: companyPos,
-				map: map,
-				icon: companyImage,               
-				title:"Our Office",
-				zIndex: 3});	
-			google.maps.event.addListener(companyMarker, 'click', function() {
-				infowindow.open(map,companyMarker);
-			});	
-		}
-		
-		return false
-	
-	}//End ContactMap
-	
+
 	
 /*--------------------------------------------------
 Function Load Via Ajax

@@ -45,7 +45,7 @@
     .second-section .img-one {
         width: 85%;
     }
-    .logoSlide-section .owl-carousel .owl-item img {
+    .logoSlide-section img {
         width: 150px;
     }
    
@@ -170,6 +170,9 @@
     .explor-section .swiper-slide {
         width: 500px;
     }
+    .logo-slider{
+        max-width: 850px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -256,7 +259,7 @@
     .btm-text li:not(:last-child) {
         margin-right:30px;
     }
-    .logoSlide-section .owl-carousel .owl-item img {
+    .logoSlide-section img {
         width: 140px;
     }
     .explor-section .swiper-slide {
@@ -520,7 +523,7 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    .logoSlide-section .owl-carousel .owl-item img {
+    .logoSlide-section img {
         width: 120px;
     }
     .head-content{
@@ -593,7 +596,7 @@
     .second-section .inner-box{
         margin-top: -92px;
     }
-    .logoSlide-section .owl-carousel .owl-item img{
+    .logoSlide-section img{
         width: 96px;
     }
     .explor-section .owl-theme .owl-nav{
