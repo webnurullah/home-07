@@ -15,9 +15,9 @@
     .footer-section {
         padding: 150px 0px 70px;
     }
-    .explor-section .slide-box .number{
+    .explor-section .swiper-slide .number{
         font-size: 80px;
-        top: 10px;
+       
     }
     .contact-part p {
         font-size: 76px;
@@ -91,7 +91,7 @@
     .explor-section .owl-carousel .owl-item img{
         width: 440px;
     }
-    .explor-section .slide-box .number{
+    .explor-section .swiper-slide .number{
         font-size: 70px;
         
     }
@@ -220,14 +220,14 @@
         letter-spacing: 0.9px;
     }
     /* slider section */
-    .explor-section .owl-stage-outer .owl-item:nth-child(even) {
-        margin-top: 0px;
+    .explor-section .swiper-slide:nth-child(even) {
+        margin-top: 50px;
     }
     .explor-section .owl-carousel .owl-item img{
         width:440px;
        
     }
-    .explor-section .slide-box .number{
+    .explor-section .swiper-slide .number{
         font-size: 50px;
     }
     .contact-part .contact-btn{
@@ -348,7 +348,7 @@
     .explor-section {
         padding: 125px 0px 60px;
     }
-    .explor-section .slide-box .number{
+    .explor-section .swiper-slide .number{
         font-size: 36px;
     }
     .slide-box h3{
@@ -372,7 +372,7 @@
       }
 
     .explor-section .heading{
-        margin-bottom: 90px;
+        margin-bottom: 110px;
     }
     .explor-section .owl-theme .owl-nav{
         left: 180px;
@@ -527,7 +527,7 @@
         width: 120px;
     }
     .head-content{
-        margin-bottom: 110px;
+        margin-bottom: 0px;
     }
     .mf-cursor{
         display: none;

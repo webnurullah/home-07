@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49">
+  <g id="Slider" transform="translate(0.5 0.5)">
+    <circle id="Oval" cx="24" cy="24" r="24" fill="#f9f5ef"/>
+    <g id="Light_Button_Secondary_Icon" data-name="Light/Button/Secondary/Icon">
+      <rect id="Rectangle" width="48" height="48" rx="24" fill="none" stroke="#c19a5b" stroke-width="1"/>
+    </g>
+    <path id="Combined_Shape" data-name="Combined Shape" d="M11,12H0V11H11V0h1V12Z" transform="translate(19.515 24) rotate(-45)" fill="#c19a5b"/>
+    <path id="Combined_Shape-2" data-name="Combined Shape" d="M-11,12H0V11H-11V0h-1V12Z" transform="translate(28.485 24) rotate(45)" fill="#c19a5b"/>
+  </g>
+</svg>
