@@ -10,8 +10,8 @@ $(document).ready(function() {
 		});
 							
 		$(".mouse-deisgn").on('mouseleave', function() {					
-			TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b', backgroundColor:'transparent'});
-			TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 0, left: 0});
+			TweenMax.to('#ball', 0.2,{borderWidth: '1px', scale:0.5, borderColor:'#c19a5b', backgroundColor:'transparent'});
+			TweenMax.to('#ball-loader', 0.2,{borderWidth: '1px', top: 0, left: 0});
 			$('#ball p').remove();				
 		});	
 
@@ -84,27 +84,27 @@ function Sliders() {
 			var swiper = new Swiper(".content-slider", ContentSliderOptions);
 			
 			$(".slider-button-prev").mouseenter(function(e) {	
-				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#c19a5b',});
-				TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
+				TweenMax.to('#ball', 0.2,{borderWidth: '1px', scale: 1, borderColor:'#c19a5b',});
+				TweenMax.to('#ball-loader', 0.2,{borderWidth: '1px', top: 2, left: 2});
 				$( "#ball" ).addClass("with-icon").append( '<i class="fa fa-chevron-left"></i>' );
 			});
 				
 			$(".slider-button-prev").mouseleave(function(e) {
-				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b',});
-				TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 0, left: 0});
+				TweenMax.to('#ball', 0.2,{borderWidth: '1px', scale:0.5, borderColor:'#c19a5b',});
+				TweenMax.to('#ball-loader', 0.2,{borderWidth: '1px', top: 0, left: 0});
 				$("#ball").removeClass("with-icon");
 				$('#ball i').remove();
 			});
 			
 			$(".slider-button-next").mouseenter(function(e) {	
-				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale: 1, borderColor:'#c19a5b',});
-				TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 2, left: 2});
+				TweenMax.to('#ball', 0.2,{borderWidth: '1px', scale: 1, borderColor:'#c19a5b',});
+				TweenMax.to('#ball-loader', 0.2,{borderWidth: '1px', top: 2, left: 2});
 				$( "#ball" ).addClass("with-icon").append( '<i class="fa fa-chevron-right"></i>' );
 			});
 				
 			$(".slider-button-next").mouseleave(function(e) {
-				TweenMax.to('#ball', 0.2,{borderWidth: '2px', scale:0.5, borderColor:'#c19a5b',});
-				TweenMax.to('#ball-loader', 0.2,{borderWidth: '2px', top: 0, left: 0});
+				TweenMax.to('#ball', 0.2,{borderWidth: '1px', scale:0.5, borderColor:'#c19a5b',});
+				TweenMax.to('#ball-loader', 0.2,{borderWidth: '1px', top: 0, left: 0});
 				$("#ball").removeClass("with-icon");
 				$('#ball i').remove();
 			});

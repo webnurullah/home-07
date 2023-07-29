@@ -24,10 +24,14 @@
         line-height: 80px;
         margin-bottom: 0px;
     }
-    .contact-part .contact-btn{
+    .contact-box{
         width: 150px;
         height: 150px;
         margin-top: -35px;
+    }
+    .contact-part .contact-btn{
+        width: 150px;
+        height: 150px;
     }
     .contact-btn span{
         font-size: 28px;
