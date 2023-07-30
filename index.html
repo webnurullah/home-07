@@ -25,10 +25,6 @@
   <!-- Responsive css -->
   <link rel="stylesheet" href="css/brackpoint.css">
 
-
-
-
-
 </head>
 
 <body>
@@ -36,28 +32,25 @@
   <!-- ========================= offcanvas header ========================== -->
   <div class="header-part">
     <div class="fix-menu-icon d-none d-md-block">
-
-            
-        <div class="icon-wrap parallax-wrap" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-            <div class="parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-              <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="">
-                <img src="images/menu.svg" alt="">
-              </a>
-
-            </div>
-        </div> 
-  
-
-
-
-      <!-- <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="">
-        <img src="images/menu.svg" alt="">
-      </a> -->
+      <div class="icon-wrap parallax-wrap" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+        <div class="parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+          <button class="Hamburger" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <i class="fa-thin fa-bars"></i>
+          </button>
+        </div>
+      </div>
     </div>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
         <span id="offcanvasRightLabel">Italiano</span>
-        <img class="close-menu" data-bs-dismiss="offcanvas" aria-label="Close" src="images/close-menu.svg" alt="">
+        <div class="icon-wrap parallax-wrap" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+          <div class="parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+            <button class="Hamburger close-menu" data-bs-dismiss="offcanvas" aria-label="Close">
+              <i class="fa-thin fa-xmark"></i>
+            </button>
+          </div>
+        </div>
       </div>
       <div class="offcanvas-body">
         <h6>House70</h6>
@@ -107,15 +100,23 @@
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
-            <div class="carousel-control-circle">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <div class="icon-wrap parallax-wrap" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+              <div class="parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                <div class="carousel-control-circle">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </div>
+              </div>
             </div>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
-            <div class="carousel-control-circle">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <div class="icon-wrap parallax-wrap" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+              <div class="parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                <div class="carousel-control-circle">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </div>
+              </div>
             </div>
           </button>
         </div>
@@ -141,29 +142,32 @@
                 <a class="btn btn-custom" href="mailto:info@house70.it">Partner werden</a>
               </div>
             </div>
-            <div class="about-gallery mouse-deisgn disable-drag" data-firstline="SEE" data-secondline="MORE">
+            <div class="about-gallery">
               <div id="gallery" class="row gx-2">
                 <div class="col-4">
-                  <img class="w-100 long lightboxed" rel="group1" data-link="images/03.jpg" alt="Image Alt 1"
-                    src="images/03.jpg" alt="">
-                  <div class="box">   
-                    <div class="clapat-button-wrap circle parallax-wrap bigger" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-                        <div class="clapat-button parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-                          <a type="button" class="see-more-btn lightboxed" href="images/slide-two.jpg" rel="group1"
+                  <div class="mouse-deisgn" data-firstline="SEE" data-secondline="MORE">
+                    <img class="w-100 long lightboxed" rel="group1" data-link="images/03.jpg" alt="Image Alt 1"
+                      src="images/03.jpg" alt="">
+                  </div>
+                  <div class="box">
+                    <div class="clapat-button-wrap circle parallax-wrap bigger"
+                      style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                      <div class="clapat-button parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <a type="button" class="see-more-btn lightboxed" href="images/slide-two.jpg" rel="group1"
                           data-link="images/slide-two.jpg">
                           <span>See <br> More</span>
                         </a>
-                        </div>
-                    </div> 
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 mouse-deisgn" data-firstline="SEE" data-secondline="MORE">
                   <img class="w-100 short lightboxed" rel="group1" data-link="images/slide-one.jpg" alt="Image Alt 2"
                     src="images/slide-one.jpg" alt="">
                   <img class="w-100 long lightboxed" rel="group1" data-link="images/02.png" alt="Image Alt 3"
                     src="images/02.png" alt="">
                 </div>
-                <div class="col-4">
+                <div class="col-4 mouse-deisgn" data-firstline="SEE" data-secondline="MORE">
                   <img class="w-100 long lightboxed" rel="group1" data-link="images/table.png" alt="Image Alt 4"
                     src="images/table.png" alt="">
                   <img class="w-100 short lightboxed" rel="group1" data-link="images/slide-two.jpg" alt="Image Alt 5"
@@ -328,29 +332,30 @@
             <div class="slider-button-prev"></div>
           </div>
         </div>
-      
         <!-- ========================= contact text part ========================== -->
-        <div class="contact-part mouse-deisgn disable-drag" data-firstline="CONTACT" data-secondline="US">
-          <div class="d-flex flex-column ">
-            <div class="contact-text">
-             
-              <div class="content-marquee-wrapper">
-                <p class="content-marquee fist-line" data-text="Contact Us Contact Us Contact Us">Contact Us Contact Us
-                  Contact Us</p>
-              </div>
-              <div class="content-marquee-wrapper1">
-                <p class="content-marquee1 second-line" data-text-one="Contact Us Contact Us Contact Us">Contact Us
-                  Contact Us Contact Us</p>
-              </div>     
+        <div class="contact-part">
+          <div class="d-flex flex-column">
+            <div class="contact-text mouse-deisgn" data-firstline="CONTACT" data-secondline="US">
+              <a href="mailto:info@house70.it">
+                <div class="content-marquee-wrapper">
+                  <p class="content-marquee fist-line" data-text="Contact Us Contact Us Contact Us">Contact Us Contact
+                    Us
+                    Contact Us</p>
+                </div>
+                <div class="content-marquee-wrapper1">
+                  <p class="content-marquee1 second-line" data-text-one="Contact Us Contact Us Contact Us">Contact Us
+                    Contact Us Contact Us</p>
+                </div>
+              </a>
             </div>
-            <div class="contact-box">
+            <div class="contact-box d-none d-md-block">
               <div class="clapat-button-wrap circle parallax-wrap bigger" style="transform: matrix(1, 0, 0, 1, 0, 0);">
                 <div class="clapat-button parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-                  <a type="button"  class="contact-btn" href="mailto:info@house70.it">
-                      <span>Con <br> tact <br> Us</span>
+                  <a type="button" class="contact-btn" href="mailto:info@house70.it">
+                    <span>Con <br> tact <br> Us</span>
                   </a>
                 </div>
-             </div> 
+              </div>
             </div>
           </div>
         </div>
@@ -393,9 +398,33 @@
               </div>
               <div class="col-12 col-md-6 text-center text-lg-end order-1 order-md-2">
                 <ul class="list-unstyled list-inline social-link">
-                  <li class="list-inline-item"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                  <li class="list-inline-item"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                  <li class="list-inline-item"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li class="list-inline-item">
+                    <div class="parallax-wrap" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                      <div class="parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <a href="">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="parallax-wrap" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                      <div class="parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <a href="">
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="parallax-wrap" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                      <div class="parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <a href="">
+                          <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -417,7 +446,7 @@
     </div>
   </div>
 
-   <!-- ========================= Magic Cursor Section ========================== -->
+  <!-- ========================= Magic Cursor Section ========================== -->
   <div id="magic-cursor" class="d-none d-md-block">
     <div id="ball">
       <div id="ball-drag"></div>
@@ -440,8 +469,6 @@
 
   <script src="js/plugins.js"></script>
   <script src="js/custom.js"></script>
-
-
 
 </body>
 

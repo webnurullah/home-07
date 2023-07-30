@@ -33,16 +33,23 @@
     <div class="fix-menu-icon d-none d-md-block">
       <div class="icon-wrap parallax-wrap" style="transform: matrix(1, 0, 0, 1, 0, 0);">
         <div class="parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-          <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="">
-            <img src="images/menu.svg" alt="">
-          </a>
+          <button class="Hamburger" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <i class="fa-thin fa-bars"></i>
+          </button>
         </div>
-    </div> 
+      </div>
     </div>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
         <span id="offcanvasRightLabel">Italiano</span>
-        <img class="close-menu" data-bs-dismiss="offcanvas" aria-label="Close" src="images/close-menu.svg" alt="">
+        <div class="icon-wrap parallax-wrap" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+          <div class="parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+            <button class="Hamburger close-menu" data-bs-dismiss="offcanvas" aria-label="Close">
+              <i class="fa-thin fa-xmark"></i>
+            </button>
+          </div>
+        </div>
       </div>
       <div class="offcanvas-body">
         <h6>House70</h6>
@@ -348,8 +355,6 @@
                 </div>
               </div>
             </div>
-
-
             <div class="line"></div>
             <div class="row">
               <div class="col-12 col-md-6 text-center text-md-start order-2 order-md-1">
@@ -357,9 +362,33 @@
               </div>
               <div class="col-12 col-md-6 text-center text-lg-end order-1 order-md-2">
                 <ul class="list-unstyled list-inline social-link">
-                  <li class="list-inline-item"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                  <li class="list-inline-item"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                  <li class="list-inline-item"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li class="list-inline-item">
+                    <div class="parallax-wrap" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                      <div class="parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <a href="">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="parallax-wrap" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                      <div class="parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <a href="">
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="parallax-wrap" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                      <div class="parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <a href="">
+                          <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -381,7 +410,7 @@
     </div>
   </div>
 
-<!-- ========================= Magic Cursor Section ========================== -->
+  <!-- ========================= Magic Cursor Section ========================== -->
   <div id="magic-cursor" class="d-none d-md-block">
     <div id="ball">
       <div id="ball-drag"></div>
@@ -404,9 +433,6 @@
 
   <script src="js/plugins.js"></script>
   <script src="js/custom.js"></script>
-
-
-
 
 </body>
 

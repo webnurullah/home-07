@@ -76,6 +76,23 @@ body{
     position: fixed;
     z-index: 99;
 }
+.Hamburger{
+  border: 1px solid #c19a5b;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.Hamburger i{
+  font-size: 24px;
+  color:#c19a5b ;
+}
+.icon-wrap.parallax-wrap:hover .Hamburger{
+  border: solid 1px transparent;	
+}
 .fix-menu-icon img{
     width: 64px;
 }
@@ -269,11 +286,15 @@ body{
 .hero-section .carousel-control-circle{
     border: solid 1px #c19a5b;
     border-radius: 50%;
-    height: 66px;
-    width: 66px;
+    height: 64px;
+    width: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
+   
+}
+.icon-wrap.parallax-wrap:hover .carousel-control-circle{
+  border: solid 1px transparent;	
 }
 .hero-section .carousel-control-prev-icon,
 .hero-section .carousel-control-next-icon {
@@ -342,6 +363,9 @@ body{
    font-weight: 400;
     font-family: 'Lora', serif;
 }
+.clapat-button-wrap.circle:hover .see-more-btn{
+  border: solid 1px transparent;	
+}
 .about-gallery .box{
   display: flex;
   justify-content: center;
@@ -349,6 +373,8 @@ body{
   height: 248px;
 
 }
+
+
 /* =================== explor Section =================== */
 .explor-section{
     background-color: #615544;
@@ -518,6 +544,9 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 2;
+}
+.clapat-button-wrap.circle:hover .contact-btn{
+  border: solid 1px transparent;	
 }
 .contact-btn span{
     font-family: Lora;
@@ -751,11 +780,13 @@ body{
     background-color: #E8D9C3; 
 }
 .logo-slider{
-    padding-top: 60px;
-    padding-bottom: 60px;
     max-width: 1030px;
     margin: auto;
     overflow: hidden;
+}
+.content-looped-carousel{
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logoSlide-section img{
     width: 170px;
@@ -973,7 +1004,7 @@ body{
       opacity:1;
       transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
   }
-  
+
   #ball p {
       color:#fff;
       height:16px;
@@ -987,7 +1018,7 @@ body{
       transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
       font-family: 'Lora', serif;
   }
-  
+ 
  
   
   .light-content #ball i, #ball.over-movie i, .light-content #ball.with-icon i {

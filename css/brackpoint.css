@@ -37,7 +37,7 @@
         font-size: 28px;
     }
     .contact-part {
-        padding: 150px 0px 150px; 
+        padding: 150px 0px 120px; 
     }
     .header-banner .title{
         font-size: 90px;
@@ -153,10 +153,11 @@
     .logoSlide-section {
         padding: 130px 0px;
     }
-    .logo-slider {
+    
+    .content-looped-carousel{
         padding-top: 50px;
         padding-bottom: 50px;
-    }
+      }
     .explor-section .swiper-slide {
         width: 500px;
     }
@@ -216,11 +217,9 @@
     .explor-section .swiper-slide .number{
         font-size: 50px;
     }
-    .contact-part .contact-btn{
-        display: none;
-    }
+   
     .contact-part {
-        padding: 80px 0px 140px; 
+        padding: 80px 0px 80px; 
     }
     /* about section */
     .about-section .about-text{
@@ -414,6 +413,7 @@
         line-height: 50px;
         margin-bottom: 0px;
     }
+   
     /* ------------footer section -------------- */
     .footer-section {
         padding: 110px 0px 60px;
@@ -499,10 +499,11 @@
     .logoSlide-section {
         padding: 110px 0px;
     }
-    .logo-slider {
+  
+    .content-looped-carousel{
         padding-top: 40px;
         padding-bottom: 40px;
-    }
+      }
     .logoSlide-section img {
         width: 120px;
     }
