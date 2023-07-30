@@ -82,12 +82,13 @@
     .hero-section .header-logo{
         width: 300px;
     }
-    .fix-menu-icon img{
+    .Hamburger{
         width: 54px;
+        height: 54px;
     }
-    .close-menu{
-        width: 54px;
-    }
+    .Hamburger i{
+        font-size: 22px;
+      }
     .hero-section .carousel-control-circle{
         width: 54px;
         height: 54px;
@@ -260,17 +261,18 @@
        top: 20px;
         right: 20px;
     }
-    .close-menu{
+    .Hamburger{
         width: 48px;
+        height: 48px;
     }
+    .Hamburger i{
+        font-size: 20px;
+      }
     .offcanvas-header span{
         font-size: 14px;
     }
     .offcanvas-body h6{
         font-size: 28px;
-    }
-    .fix-menu-icon img{
-        width: 48px;
     }
     .hero-section .up-tilte,
     .banner-caption .up-tilte{

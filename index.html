@@ -44,12 +44,17 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
         <span id="offcanvasRightLabel">Italiano</span>
-        <div class="icon-wrap parallax-wrap" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+        <div class="icon-wrap parallax-wrap d-none d-md-block" style="transform: matrix(1, 0, 0, 1, 0, 0);">
           <div class="parallax-element" style="transform: matrix(1, 0, 0, 1, 0, 0);">
             <button class="Hamburger close-menu" data-bs-dismiss="offcanvas" aria-label="Close">
               <i class="fa-thin fa-xmark"></i>
             </button>
           </div>
+        </div>
+        <div class="d-md-none">
+          <button class="Hamburger close-menu" data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="fa-thin fa-xmark"></i>
+          </button>
         </div>
       </div>
       <div class="offcanvas-body">
@@ -72,10 +77,11 @@
     <div class="body-inner">
       <!-- ========================= Hero Section ========================== -->
       <div class="hero-section">
-        <div class="fix-menu-icon d-block d-md-none">
-          <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" href="">
-            <img src="images/menu.svg" alt="">
-          </a>
+        <div class="fix-menu-icon d-md-none">
+          <button class="Hamburger" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <i class="fa-thin fa-bars"></i>
+          </button>
         </div>
         <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
