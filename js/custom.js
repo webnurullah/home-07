@@ -1,6 +1,9 @@
 	
 $(document).ready(function() {
 	
+
+	
+
 		// Mouse Design
 		$(".mouse-deisgn").on('mouseenter', function() {	
 			var $this = $(this);			
@@ -26,8 +29,11 @@ $(document).ready(function() {
 });
 
 
+
 	
-	
+
+
+
 /*--------------------------------------------------
 Function Sliders
 ---------------------------------------------------*/

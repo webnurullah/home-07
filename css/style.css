@@ -1501,7 +1501,7 @@ body{
   /* Scrollbar */
 
 
-	.swiper-scrollbar-drag {
+	/* .swiper-scrollbar-drag {
 	  height: 100%;
 	  width: 100%;
 	  position: relative;
@@ -1509,7 +1509,7 @@ body{
 	  border-radius: 10px;
 	  left: 0;
 	  top: 0;
-	}
+	} */
 	.swiper-scrollbar-cursor-drag {
 	  cursor: move;
 	}
@@ -1533,18 +1533,53 @@ body{
 
 .swiper-scrollbar-drag {
   background: none;
-}
-
-.swiper-scrollbar-drag:after {
-
-  content: "";
   position: absolute;
-  background-image: url("../images/arrow.svg");
   top: -24px;
-  left: 20%;
+  left: 8%;
+  width: 48px !important;
+}
+.swiper-scrollbar-drag img{
   width: 48px;
   height: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+.content-carousel .container{
+  position: relative;
+}
+.arrow-box{
+  position: absolute;
+  right: 0;
+  top: -100px;
+  width: 270px;
+}
+
+
+/* .swiper-scrollbar-drag i{
+  color: #C19A5B;
+  position: relative;
+  z-index: 10;
+  left: 28px;
+} */
+/* .swiper-inner-box{
+  width: 48px; 
+   height: 48px;
+  position: absolute;
+  top: -24px;
+  left: 20%;
+  display: inline-block;
+} */
+/* .swiper-scrollbar-drag:after {
+   content: "";
+  position: absolute;
+  top: -12px;
+  width: 48px !important ;
+  height: 48px !important;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #C19A5B;
+  left: 20%; 
+} */
 
 
 

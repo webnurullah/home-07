@@ -1,6 +1,8 @@
 /* XX-Large devices (larger desktops, 1600px and up) */
 @media (max-width: 1600px) {
-   
+    .swiper-scrollbar-drag {
+        left: 4%;
+      }
 }
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (max-width: 1400px) {
@@ -165,6 +167,9 @@
     .logo-slider{
         max-width: 850px;
     }
+    .arrow-box{
+        top: -50px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -257,6 +262,12 @@
 }
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
+    .arrow-box{
+        top: 0px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
     .fix-menu-icon{
        top: 20px;
         right: 20px;
